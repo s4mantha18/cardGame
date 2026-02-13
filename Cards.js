@@ -33,7 +33,7 @@ function drawCard() {
   document.getElementById("Deck").textContent = drawnCard;
   document.getElementById("count").textContent = "Cards left: " + deck.length;
 
-  let imageName = drawnCard.split(" ").join("_") + ".png";
+  let imageName = drawnCard.split(" ").join("_").toLowerCase() + ".png";
   let cardImg = document.getElementById("card-front");
   cardImg.src = "img/" + imageName;
 
